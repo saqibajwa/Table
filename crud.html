@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invoice Table</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+<style>
+.invoice-table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.invoice-table th,
+.invoice-table td {
+  border: 1px solid #ddd;
+  padding: 8px 16px;
+  text-align: left;
+}
+
+.invoice-table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.invoice-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.invoice-table tr:hover {
+  background-color: #ddd;
+}
+
+.invoice-table .action {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<table class="invoice-table">
+  <thead>
+    <tr>
+      <th>INVOICE</th>
+      <th>NAME</th>
+      <th>DATE</th>
+      <th>PAYMENT STATUS</th>
+      <th>AMOUNT</th>
+      <th>ACTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NA</td>
+      <td>Pratham</td>
+      <td>01/04/2022</td>
+      <td style="color: #f00">Not Completed</td>  <td>22,000</td>
+      <td class="action">    <a href="#">
+        <i class="fas fa-edit"></i> </a>
+      <a href="#" onclick="return confirm('Are you sure you want to delete?');">
+        <i class="fas fa-trash-alt"></i> </a>
+  </td </tr>
+    <tr>
+      <td>INV 1</td>
+      <td>Doe</td>
+      <td>01/04/2022</td>
+      <td style="color: #009900">Completed</td>  <td>23,000</td>
+      <td class="action">    <a href="#">
+        <i class="fas fa-edit"></i> </a>
+      <a href="#" onclick="return confirm('Are you sure you want to delete?');">
+        <i class="fas fa-trash-alt"></i> </a>
+  </td>
+    </tr>
+    <tr>
+      <td>INV 2</td>
+      <td>Cristian</td>
+      <td>01/04/2022</td>
+      <td style="color: #ffc107">Processing</td>  <td>28,000</td>
+      <td class="action">    <a href="#">
+        <i class="fas fa-edit"></i> </a>
+      <a href="#" onclick="return confirm('Are you sure you want to delete?');">
+        <i class="fas fa-trash-alt"></i> </a>
+  </td>
+    </tr>
+    <tr>
+      <td>INV 3</td>
+      <td>Kiran</td>
+      <td>01/04/2022</td>
+      <td style="color: #ffc107">Processing</td>  <td>25,000</td>
+      <td class="action">    <a href="#">
+        <i class="fas fa-edit"></i> </a>
+      <a href="#" onclick="return confirm('Are you sure you want to delete?');">
+        <i class="fas fa-trash-alt"></i> </a>
+  </td>
+    </tr>
+    <tr>
+      <td>INV 4</td>
+      <td>Kite</td>
+      <td>01/04/2022</td>
+      <td style="color: #009900">Completed</td>  <td>22,000</td>
+      <td class="action">    <a href="#">
+        <i class="fas fa-edit"></i> </a>
+      <a href="#" onclick="return confirm('Are you sure you want to delete?');">
+        <i class="fas fa-trash-alt"></i> </a>
+  </td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
